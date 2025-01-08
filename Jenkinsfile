@@ -11,7 +11,8 @@ pipeline {
          stage('build') { 
             steps {
                 sh 'cd hello-world-war'
-                sh 'mvn clean package'
+                sh 'mvn clean install'
+                sh 'mvn deploy'
             }
         }
     }
