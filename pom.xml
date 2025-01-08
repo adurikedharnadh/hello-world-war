@@ -7,6 +7,11 @@
 	<packaging>war</packaging>
 
 	<distributionManagement>
+          <repository>
+               <id>snapshots</id>
+	       <name>a0kgbtuoge9of-artifactory-primary-0-snapshots</name>
+               <url>https://trialyoqin4.jfrog.io/artifactory/hello-world-war-real-libs-snapshot</url>
+          </repository>
           <snapshotRepository>
             <id>snapshots</id>
             <name>a0kgbtuoge9of-artifactory-primary-0-snapshots</name>
