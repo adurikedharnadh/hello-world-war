@@ -42,5 +42,4 @@ jobs:
                 </settings>" > ~/.m2/settings.xml   
         
     - name: Build with Maven
-      run: mvn clean install
-      run: mvn deploy
+      run: mvn clean deploy
