@@ -10,7 +10,7 @@
 	    <repository>
 	        <id>hello-world-war</id>
 	        <name>hello-world-war-libs-release</name>
-	        <url>http://23.20.102.242:8082/artifactory/hello-world-war-libs-release/</url>
+	        <url>http://3.94.159.27:8082/artifactory/hello-world-war-libs-release/</url>
 	    </repository>
   	</distributionManagement>
         <name>Hello World Web Application Repository</name>
