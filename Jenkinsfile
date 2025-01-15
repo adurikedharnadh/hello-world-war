@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+       Sample_creds = credentials('Jfrog')
+    }
        stages 
     {
         stage('checkout') {             
@@ -10,7 +13,7 @@ pipeline {
                 sudo su
                 cd /opt/apache-tomcat-10.1.34/webapps
                 ls
-                curl -L -u "admin:cmVmdGtuOjAxOjE3NjgzOTI4MTA6OGRpUm1JdmZMSnFDNXhDOFRQSFVOV1dyNmxS" -O "http://3.94.159.27:8082/artifactory/hello-world-war-libs-release/com/efsavage/hello-world-war/1.0.${env.GITHUB_RUN_NUMBER}/hello-world-war-1.0.${env.GITHUB_RUN_NUMBER}.war"
+                curl -L -u "Jfrog_USR:Jfrog_PSW" -O "http://3.94.159.27:8082/artifactory/hello-world-war-libs-release/com/efsavage/hello-world-war/1.0.24/hello-world-war-1.0.24.war"
                 pwd
                 cd /opt/apache-tomcat-10.1.34/bin
                 ./shutdown.sh
