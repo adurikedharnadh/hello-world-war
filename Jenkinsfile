@@ -4,16 +4,13 @@ pipeline {
     {
         stage('checkout') {             
             steps {
-                sh 'rm -rf hello-world-war'
-                sh 'git clone https://github.com/hhgsharish/hello-world-war/'
+                sh 'sleep 60'
+                sh 'sudo su'
+                sh 'cd /opt/apache-tomcat-10.1.34/webapps'
+                sh 'curl -L -u "admin:cmVmdGtuOjAxOjE3NjgzOTI4MTA6OGRpUm1JdmZMSnFDNXhDOFRQSFVOV1dyNmxS" -O "http://23.20.102.242:8082/artifactory/hello-world-war-libs-release/com/efsavage/hello-world-war/1.0.20/hello-world-war-1.0.20.war"'
+                sh 'pwd'
             }
         }
-         stage('build') { 
-            steps {
-                sh 'cd hello-world-war'
-                sh 'mvn clean install'
-                sh 'mvn deploy'
-            }
-        }
+         
     }
 }
