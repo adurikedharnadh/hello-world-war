@@ -21,7 +21,7 @@ pipeline {
                 """
                 }
     }
-    stage('Moing the file towebapps to apache server){
+    stage('Moing the file towebapps to apache server'){
           steps
           {
               sh """
