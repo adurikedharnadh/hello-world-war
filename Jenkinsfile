@@ -5,7 +5,7 @@ pipeline {
     }
        stages 
     {
-        stage('checkout') {             
+        stage('Kedhar') {             
             steps {
                 sh """
                 #!/bin/bash
