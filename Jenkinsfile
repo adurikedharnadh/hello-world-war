@@ -14,7 +14,7 @@ pipeline {
                 }
                 }
         
-                stage('changing the previlige to root')
+                stage('changing the previlige to root') {
                 steps{
                     sh """
                 sudo su
