@@ -20,7 +20,7 @@ pipeline {
                 sleep 3
                 pwd
                 
-                pwd
+                
                 cd /opt/apache-tomcat-10.1.34/bin
                 ./startup.sh
                 sleep 3
